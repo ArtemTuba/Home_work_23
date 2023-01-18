@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-spacing: 1px;
+            border: 1px solid black;
+        }
+
+        table td {
+            border: 1px solid black;
+        }
+
+        .wrap-form {
+            border: 1px solid black;
+            width: 20%;
+            text-align: center;
+        }
+        .form-input {
+            margin-top: 5px;
+        }
+
+        #bt {
+            margin: 5px 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <form class="wrap-form" id="form">
+            <input id="name" class="form-input" type="text" placeholder="Ім'я" name="name">
+            <br />
+            <input id="surname" class="form-input" type="text" placeholder="Призвище" name="surname">
+            <br />
+            <input id="date" class="form-input" type="text" placeholder="Дата народження" name="date">
+            <br />
+            Чоловік <input id="gender" class="form-input-radio" type="radio"  name="gender" value="Чоловік">
+            Жінка <input id="gender" class="form-input-radio" type="radio" name="gender" value="Жінка">
+            <br />
+            <select id="city" class="form-input" name="city">
+                <option></option>
+                <option  value="Kiyv">Київ</option>
+                <option  value="Dnipro">Дніпро</option>
+                <option  value="kharkiv">Харків</option>
+                <option  value="Lviv">Львів</option>
+                <option  value="Doneck">Донецьк</option>
+                <option  value="Kherson">Херсон</option>
+            </select>
+            <br />
+            <textarea id="adress" class="form-input"  name="adress" cols="20" rows="5"></textarea>
+            <br />
+            Англійська <input class="form-input-checkbox" type="checkbox" name="lang" value="English">
+            <br />
+            Іспанська <input class="form-input-checkbox" type="checkbox" name="lang" value="Spanish">
+            <br />
+            Італійська <input class="form-input-checkbox" type="checkbox" name="lang" value="Italy">
+            <br />
+    
+            <input id="bt" type="button" name="bt" value="save">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
